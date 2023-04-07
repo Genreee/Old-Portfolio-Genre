@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev server</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li><a class="header__link" href="#about">About</a></li>
+        <li><a class="header__link" href="#featured">Work</a></li>
+        <li><a class="header__link" href="#contact">Contact</a></li>
+        <li class="header__line"></li>
+        <li><button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 
+              0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5
+                0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0
+                101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button></li>
+        <li><a class="header__resume btn" href="#">Resume</a></li>
+      </ul>
+      <button class="header__bars"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75
+        6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0
+        01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 
+        0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li><a class="mobile-nav__link" href="#about">About</a></li>
+        <li><a class="mobile-nav__link" href="#featured">Work</a></li>
+        <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+        <li class="mobile-nav__link-line"></li>
+        <li><button id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 
+                    0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5
+                      0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0
+                      101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button></li>
+        <li><a class="mobile-nav__btn btn" href="#">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- END of Mobile Navigation -->
+  <main>
+    <section class="hero container">
+      <img class="hero__img" src="/hero.jpg" alt="Profile picture">
+      <h2 class="hero__subtitle">Hi, I'm Genre</h2>
+      <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER.</h1>
+      <p class="hero__description">A passionate <strong> / Fullstack-Jamstack
+          web developer</strong> and <strong> UI/UX </strong> enthusiast specialized
+        in bulding stunning pixel-perfect interactive
+        websites/applications.
+      </p>
+      <a class="hero__btn btn" href="#">Reach out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">Hello there! I'm Genre,<strong> a Frontend / Fullstack-Jamstack </strong> web
+          developer
+          based near Montreal. I wake up in the morning, grab a cup of timmies coffee,
+          open up my laptop and build things that live on the web all day, everyday. </p>
+        <p class="about__description">People who know me say l'm obsessed, that's fair, l am very driven and love
+          learning new things.</p>
+        <p class="about__description">I recently created a YouTube channel called <a href="#"> Slaying The Dragon </a>
+          where I upload
+          videos on front-end web development topics.</p>
+        <hr class="about__hr">
+        <h3 class="about__subtitle">Technologies</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">JavaScript (ES6+)</li>
+            <li class="about__list">CSS</li>
+            <li class="about__list">HTML</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">ReactJS</li>
+            <li class="about__list">NextJS</li>
+            <li class="about__list">TailwindCSS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" src="https://via.placeholder.com/315" data-src="/about.jpg"
+          alt="Profile picture">
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Featured project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">slaying the Dragon</h2>
+        <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description"></p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem
+      libero
+      eveniet aspernatur est quod fuga et, autem officia laborum impedit omnis minus vero deserunt ratione aperiam.
+      Esse, deleniti quas?</p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">TailwindCSS</li>
+            <li class="featured__info">ReactJS</li>
+            <li class="featured__info">React-hook-form</li>
+            <li class="featured__info">NextJS</li>
+            <li class="featured__info">Axios</li>
+            <li class="featured__info">Supabase</li>
+            <li class="featured__info">Stripe</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Project type</h3>
+          <p class="featured__info">Fullstack-Jamstack</p>
+        </div>
+        <div>
+          <h3 class="featured__label">Timeline</h3>
+          <p class="featured__info">December 2022 - present</p>
+        </div>
+      </div>
+
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/1.jpg" alt="genre 1">
+        </div>
+
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/2.jpg" alt="genre 2">
+        </div>
+
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/3.jpg" alt="genre 3">
+        </div>
+
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/4.jpg" alt="genre 4">
+        </div>
+
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/5.jpg" alt="genre 5">
+        </div>
+
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/6.jpg" alt="genre 6">
+        </div>
+
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/7.jpg" alt="genre 7">
+        </div>
+
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://via.placeholder.com/474x266" data-src="/8.jpg" alt="genre 8">
+        </div>
+      </div>
+
+    </section>
+    <section class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur
+        laborum, laboriosam odit non sint eveniet. Hic perspiciatis placeat atque iure quae, saepe enim quibusdam optio
+        error harum sint dolore?</p>
+
+      <div class="work__container">
+
+        <!-- project 1 -->
+        <h3 class="work__project-title">Wax Motf</h3>
+        <div class="work__img-wrapper work__image1">
+          <img class="lazy loading" src="https://via.placeholder.com/534x547" data-src="/a.png" alt="Wax Motf">
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">Motf</h3>
+          <p class="work__project-description1">Lorem Wax ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            architecto
+            eius quos placeat dicta. Asperiores
+            voluptatum commodi quisquam rerum porro animi, sint tempora aspernatur consequuntur! Impedit quas doloremque
+            asperiores inventore?</p>
+          <p class="work__project-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur
+            quibusdam, maiores iusto voluptatem harum
+            quidem quo blanditiis expedita saepe perspiciatis qui! Explicabo pariatur similique blanditiis id illo
+            inventore
+            repellat?</p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+        <!-- project 2 -->
+        <h3 class="work__project-title">Draze Force</h3>
+        <div class="work__img-wrapper work__image2">
+          <img class="lazy loading" src="https://via.placeholder.com/534x547" data-src="/a.png" alt="Draze Force">
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle">Draze Force</h3>
+
+          <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            architecto
+            eius
+            quos placeat dicta. Asperiores
+            voluptatum commodi quisquam rerum porro animi, sint tempora aspernatur consequuntur! Impedit quas doloremque
+            asperiores inventore?</p>
+          <p class="work__project-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur
+            quibusdam,
+            maiores iusto voluptatem harum
+            quidem quo blanditiis expedita saepe perspiciatis qui! Explicabo pariatur similique blanditiis id illo
+            inventore
+            repellat?</p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- project 3 -->
+        <h3 class="work__project-title">Artren</h3>
+        <div class="work__img-wrapper work__image3">
+          <img class="lazy loading" src="https://via.placeholder.com/534x547" data-src="/a.png" alt="Artren">
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project-subtitle">Artren</h3>
+
+          <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            architecto
+            eius
+            quos placeat dicta. Asperiores
+            voluptatum commodi quisquam rerum porro animi, sint tempora aspernatur consequuntur! Impedit quas doloremque
+            asperiores inventore?</p>
+          <p class="work__project-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur
+            quibusdam,
+            maiores iusto voluptatem harum
+            quidem quo blanditiis expedita saepe perspiciatis qui! Explicabo pariatur similique blanditiis id illo
+            inventore
+            repellat?</p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- project 4 -->
+        <h3 class="work__project-title">Platform pro</h3>
+        <div class="work__img-wrapper work__image4">
+          <img class="lazy loading" src="https://via.placeholder.com/534x547" data-src="/a.png"
+            alt="Platform pro">
+        </div>
+        <div class="work__project work__content4">
+          <h3 class="work__project-subtitle">Platform pro</h3>
+
+          <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            architecto
+            eius
+            quos placeat dicta. Asperiores
+            voluptatum commodi quisquam rerum porro animi, sint tempora aspernatur consequuntur! Impedit quas doloremque
+            asperiores inventore?</p>
+          <p class="work__project-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur
+            quibusdam,
+            maiores iusto voluptatem harum
+            quidem quo blanditiis expedita saepe perspiciatis qui! Explicabo pariatur similique blanditiis id illo
+            inventore
+            repellat?</p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- project 5 -->
+        <h3 class="work__project-title">Wallys Vegan</h3>
+        <div class="work__img-wrapper work__image5">
+          <img class="lazy loading" src="https://via.placeholder.com/534x547" data-src="/a.png"
+            alt="Wallys Vegan">
+        </div>
+        <div class="work__project work__content5">
+          <h3 class="work__project-subtitle">Wallys Vegan</h3>
+
+          <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            architecto
+            eius
+            quos placeat dicta. Asperiores
+            voluptatum commodi quisquam rerum porro animi, sint tempora aspernatur consequuntur! Impedit quas doloremque
+            asperiores inventore?</p>
+          <p class="work__project-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur
+            quibusdam,
+            maiores iusto voluptatem harum
+            quidem quo blanditiis expedita saepe perspiciatis qui! Explicabo pariatur similique blanditiis id illo
+            inventore
+            repellat?</p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+        <!-- project 6 -->
+        <h3 class="work__project-title">Old Portfolio</h3>
+        <div class="work__img-wrapper work__image6">
+          <img class="lazy loading" src="https://via.placeholder.com/534x547" data-src="/a.png"
+            alt="Old Portfolio">
+        </div>
+        <div class="work__project work__content6">
+          <h3 class="work__project-subtitle">Old Portfolio</h3>
+
+          <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            architecto
+            eius
+            quos placeat dicta. Asperiores
+            voluptatum commodi quisquam rerum porro animi, sint tempora aspernatur consequuntur! Impedit quas doloremque
+            asperiores inventore?</p>
+          <p class="work__project-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur
+            quibusdam,
+            maiores iusto voluptatem harum
+            quidem quo blanditiis expedita saepe perspiciatis qui! Explicabo pariatur similique blanditiis id illo
+            inventore
+            repellat?</p>
+          <a class="btn work__project-btn" href="#">Website</a>
+        </div>
+
+
+      </div>
+
+    </section>
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">Get In contact</h2>
+      <p class="contact__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi animi
+        fugit commodi placeat. Perferendis consectetur minus odio ipsam ea voluptates repellendus illum nam magnam,
+        aspernatur corporis consequatur voluptatem a!</p>
+      <a class="contact__btn btn" href="mailto:genreglennmorales@gmail.com" target="_blank">Reach Out</a>
+    </section>
+  </main>
+  <footer class="footer container section">
+    <h3 class="footer__title">~ Genre Glenn Morales ~
+    </h3>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
