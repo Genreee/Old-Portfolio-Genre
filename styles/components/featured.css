@@ -121,7 +121,7 @@
 /* sm */
 @media (min-width: 640px) {
   .featured__img-container {
-    grid-template-columns: repeat(auto-fit, minmax(496px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(492px, 1fr));
   }
 }
 

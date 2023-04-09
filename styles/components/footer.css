@@ -6,4 +6,15 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     user-select: none;
+
+}
+
+.footer__description, .footer__title-span  {
+    text-align: center;
+    font-size: var(--size-xxs);
+    color: var(--clr-slate400);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 200;
+    user-select: none;
 }

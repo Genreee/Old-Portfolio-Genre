@@ -1,5 +1,7 @@
 const darkMode = () => {
-  const themeToggleBtns = document.querySelectorAll("#theme-toggle");
+  const themeToggleBtns = document.querySelectorAll(
+    "#theme-toggle, #theme-toggle__mobile"
+  );
 
   // state
   const theme = localStorage.getItem("theme");
@@ -11,17 +13,17 @@ const darkMode = () => {
   const handleThemeToggle = () => {
     document.body.classList.toggle("light-mode");
     if (document.body.classList.contains("light-mode")) {
-      localStorage, setItem("theme", "light-mode");
+      localStorage.setItem("theme", "light-mode");
     } else {
-      localStorage, removeItem("theme");
-      document.body.removeAttribute('class');
+      localStorage.removeItem("theme");
+      document.body.removeAttribute("class");
     }
   };
 
   // Events
-  themeToggleBtns.forEach(btn => 
-    btn.addEventListener('click', handleThemeToggle)
-  );
+  themeToggleBtns.forEach((btn) => {
+    btn.addEventListener("click", handleThemeToggle);
+  });
 };
 
 export default darkMode;
