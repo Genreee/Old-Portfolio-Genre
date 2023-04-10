@@ -53,12 +53,42 @@
   margin-left: 2.5em;
 }
 
-
 .about__icon-img {
   max-height: 1.5em;
   max-width: 1.5em;
   position: absolute;
   margin: -1.5em 0;
+}
+
+.contact__socialmedia-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact__socialmedia-btn {
+  max-width: 1.2em;
+  min-height: 1.2em;
+  margin-right: 0.3em;
+}
+
+.contact__p {
+  color: var(--clr-slate400);
+}
+
+.contact__btn-phone-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__btn-phone {
+  font-size: 0.5em;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+  color: var(--clr-light);
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .about__img-wrapper {
