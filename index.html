@@ -10,7 +10,7 @@
   <meta name="keywords" content="web design, html, css, js">
   <title>My Portfolio</title>
   <link href="https://api.fontshare.com/v2/css?f%5B%5D=general-sans@500,600,400,700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -68,10 +68,10 @@
     <section class="hero container">
       <img class="hero__img" src="/hero.jpg" alt="Profile picture">
       <h2 class="hero__subtitle">Hi, I'm Genre</h2>
-      <h1 class="hero__title">FRONT-END <br> WEB ENGINEER.</h1>
-      <p class="hero__description">A passionate <strong> Frontend/Fullstack-Jamstack
-          web developer</strong> and <strong> UI/UX </strong> enthusiast specialized
-        in bulding stunning pixel-perfect interactive
+      <h1 class="hero__title">SOFTWARE <br> ENGINEER/DEVELOPER.</h1>
+      <p class="hero__description">A passionate <strong> Frontend / Fullstack-Jamstack
+          developer</strong> and <strong> UI/UX </strong> enthusiast specialized
+        in bulding functional and responsive stunning pixel-perfect interactive
         websites/applications.
       </p>
       <a class="hero__btn btn" href="#">Reach out</a>
@@ -83,11 +83,14 @@
           developer
           based on Sipalay City Philippines. I wake up in the morning, grab a cup of coffee,
           open up my laptop and build things that makes me happy and to help other people </p>
-        <p class="about__description">I am a college student currently studying at AMA University pursuing a Bachelor of Science degree in Information
-        Technology (BSIT). I will be graduating next year, and throughout my academic journey, I have gained valuable knowledge
-        and skills in various areas related to information technology, including programming, software development, database
-        management, and networking.
-</p>
+        <p class="about__description">I am a college student currently studying at AMA University pursuing a Bachelor of
+          Science degree in Information
+          Technology (BSIT). I will be graduating next year, and throughout my academic journey, I have gained valuable
+          knowledge
+          and skills in various areas related to information technology, including programming, software development,
+          database
+          management, and networking.
+        </p>
         <p class="about__description">l am very driven and love learning new things. you can check my
           repositories&#160;@<a href=" https://github.com/Genreee?tab=repositories">
             https://github.com/Genreee?tab=repositories
@@ -343,6 +346,34 @@
 
       </div>
 
+      <!-- certificates -->
+      <div class="certificates container section">
+        <p>certificates</p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/CodingFundamentals.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/CodingFundamentals2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/HTML.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/CSS.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/IntroductiontoPython.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/JavaScript.jpg" alt=""></div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+
+        </div>
+      </div>
+      <!-- certificates -->
+
     </section>
     <section id="contact" class="contact container section">
       <h2 class="contact__title">Get In contact</h2>
@@ -360,16 +391,35 @@
       <div class="contact__socialmedia-wrapper container">
         <p class="contact__p">or &nbsp; &nbsp; </p>
 
-        <a href="https://www.facebook.com/profile.php?id=100068578215585"><button class="contact__socialmedia-btn"><img
-              src="/Facebook-icon.png" alt="Facebook button icon"></button></a>
-        <a href="https://www.messenger.com/"><button class="contact__socialmedia-btn"><img src="/Messenger-icon.png"
-              alt="Messenger button icon"></button></a>
-        <a href="https://api.whatsapp.com/send?phone=98912957724"><button class="contact__socialmedia-btn"><img
-              src="/Whatsapp-icon.jpg" alt="Whatsapp button icon"></button></a>
 
-              <div class="contact__btn-phone-wrapper">
-        <button class="contact__btn-phone" onclick="location.href='tel:0912957724'">Call-me</button>
-        <button class="contact__btn-phone" onclick="location.href='sms:0912957724'">Text-me</button>
+
+
+        <a class="contact__socialmedia-btn" href="https://www.facebook.com/profile.php?id=100068578215585">
+
+          <img src="/Facebook-icon.png" alt="Facebook button icon">
+
+        </a>
+
+
+        <a class="contact__socialmedia-btn" href="https://www.messenger.com/">
+
+          <img src="/Messenger-icon.png" alt="Messenger button icon">
+
+        </a>
+
+        <a class="contact__socialmedia-btn" href="https://api.whatsapp.com/send?phone=98912957724">
+
+          <img src="/Whatsapp-icon.jpg" alt="Whatsapp button icon">
+
+        </a>
+
+
+
+
+
+        <div class="contact__btn-phone-wrapper">
+          <button class="contact__btn-phone" onclick="location.href='tel:0912957724'">Call-me</button>
+          <button class="contact__btn-phone" onclick="location.href='sms:0912957724'">Text-me</button>
         </div>
       </div>
 
@@ -383,8 +433,11 @@
     </h3>
     <p class="footer__description"> All right reserved 2023 </p>
   </footer>
-  <script type="module" src="./src/main.js"></script>
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script type="module" src="./src/main.js"></script>
 
 </body>
 

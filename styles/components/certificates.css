@@ -1,0 +1,28 @@
+.certificates {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.certificates p{
+text-transform: capitalize;
+margin-bottom: 3em;
+font-size: xx-large;
+font-weight: 700;
+}
+
+.swiper{
+  width: 80%;
+  height: fit-content;
+}
+.swiper-slide img{
+width: 100%;
+
+}
+
+.swiper .swiper-button-prev, .swiper-button-next{
+color: var( --clr-indigo);
+}
+

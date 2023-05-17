@@ -8,12 +8,19 @@ import "../styles/components/work.css";
 import "../styles/components/contact.css";
 import "../styles/components/footer.css";
 import "../styles/components/mobile-nav.css";
+import "../styles/components/certificates.css";
 import "../styles/utils.css";
 
 import mobileNav from "./utils/mobile-nav";
 import darkMode from "./utils/dark-mode";
 import lazyLoading from "./utils/lazy-loading";
+import swiper from "./utils/certificates";
+
+
+
+
 
 mobileNav();
 darkMode();
 lazyLoading();
+swiper();
