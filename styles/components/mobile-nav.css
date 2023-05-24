@@ -32,20 +32,9 @@
 }
 
 .mobile-nav__link:hover {
-  color: var(--clr-rose);
+  color: var(--clr-indigo);
 }
 
-.mobile-nav__link-line{
-    border: 1px solid var(--clr-slate800);
-    padding-right: 1.5rem;
-}
-
-.mobile-nav__sun{
-    display: block;
-    width: var(--size-xl);
-    height: var(--size-xl);
-    color: var(--clr-slate600);
-}
 
 .mobile-nav__btn{
     font-size: var(--size-sm);
